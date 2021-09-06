@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>homepage</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--Personal CCS-->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!Facebook sdk>
+
+    <script>
+      window.fbAsyncInit = function () {
+        FB.init({
+          appId: '566640504655529',
+          cookie: true,
+          xfbml: true,
+          version: 'v11.0'
+        });
+      };
+
+      (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) { return; }
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+</head>
+
+<body>
+
+  <!--Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+
+  <!--Main Page-->
+  <div class="parent_container">
+
+    <!--navbar-->
+    <div class="child_container" id="navbar">
+      <ul>
+        <li id='navbar_li'>
+          <img src="https://cdn-icons-png.flaticon.com/512/711/711759.png" alt="messages">
+        </li>
+        <li id='navbar_li'>
+          <img src="https://cdn-icons-png.flaticon.com/512/1500/1500455.png" alt="friends">
+        </li>
+        <li id='navbar_li'>
+          <img
+            src="https://img-premium.flaticon.com/png/512/2923/premium/2923845.png?token=exp=1630920197~hmac=ce8c523ae00b3c2c94e3e049ef733fcd"
+            alt="Analytics">
+        </li>
+        <li id='navbar_li'>
+          <img
+            src="https://img-premium.flaticon.com/png/512/1144/premium/1144760.png?token=exp=1630920227~hmac=74937fb96a9ce61f82605b9f075632b8"
+            alt="Profile">
+        </li>
+      </ul>
+    </div>
+
+    
+
+    <!--Converstaions-->
+    <div class="child_container" id="conversations">
+      <div id='convo_head'>
+        <p id='convo_head_child'><img src="https://cdn-icons-png.flaticon.com/512/507/507205.png" />Conversations</p>
+        <img id='convo_head_child' src="https://cdn-icons-png.flaticon.com/512/3580/3580291.png"></img>
+      </div>
+
+      <ul id="convo_item">
+        <li>
+          <p>item1</p>
+        </li>
+        <li>
+          <p>item1</p>
+        </li>
+        <li>
+          <p>item1</p>
+        </li>
+        <li>
+          <p>item1</p>
+        </li>
+      </ul>
+
+    </div>
+
+    <!--Chat-->
+    <div class="child_container" id="chat">
+      <div id='chat_header'>
+        <p>User_Name</p>
+      </div>
+      <div id='chat_area'>
+
+      </div>
+      <div id='chat_footer'>
+        <textarea placeholder="Type your message"></textarea>
+      </div>
+    </div>
+
+    <!--profile-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <div class="child_container" class="card" id="profile">
+      <div style="display: flex; justify-content: space-around">
+        <div>
+          <img src="https://img-premium.flaticon.com/png/512/1144/premium/1144760.png?token=exp=1630920227~hmac=74937fb96a9ce61f82605b9f075632b8" style="width:100%">
+          <h1>User_name</h1>
+          <span>status</span>
+
+          <button>Call</button>
+          <button>Profile</button>
+           <div>
+
+            <p class="title">CEO & Founder, Example</p>
+          <p>Harvard University</p>
+          <a href="#"><i class="fa fa-dribbble"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <p><button>View Details</button></p>
+           </div>
+           
+          
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 5px;
+    margin: 0px;
+}
+
+.parent_container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.child_container {
+    float: left;
+    padding: 10px;
+    border: black;
+    border-width: 1px;
+    border-style: solid;
+    height: 600px;
+}
+/*----------------------------------------------------------------------------------------------------*/
+
+#navbar {
+    width: 5%;
+    background-color: #34b1eb;
+}
+
+#conversations{
+    width: 20%;
+}
+
+#chat{
+    width: 55%;
+}
+
+#profile{
+    width: 20%;
+}
+/*----------------------------------------------------------------------------------------------------*/
+
+#navbar > ul{
+    list-style-type: none;
+    list-style: none;
+    list-style-type: none;
+    margin: 0px 0px 10px 0px;
+    padding: 0;
+    width: 25%;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+#navbar_li > img{
+    width:40px;
+    height:40px;
+    padding:7px;
+}
+/*----------------------------------------------------------------------------------------------------*/
+#convo_head{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#convo_head_child{
+    float: left;
+}
+
+#convo_head > p {
+    width: 90%;
+}
+
+#convo_head > p > img {
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+    margin: 5px;
+}
+
+#convo_head > img{
+    width: 10%;
+}
+
+
+#conversations > p {
+    font-size: 20px;
+}
+
+#conversations > p > img {
+    width:30px;
+    height:30px;
+    padding:5px;
+}
+
+#convo_item{
+    margin: auto;
+    padding: auto;
+    list-style-type: none;
+    list-style: none;
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+
+#chat {
+    display: table;
+}
+
+#chat > div{
+    float:inline-start ;
+    border: black;
+    border-width: 1px;
+    border-style: solid;
+}
+
+#chat_header{
+    height: 10%;
+}
+
+#chat_area{
+    height: 80%;
+}
+
+#chat_footer{
+    height: 10%;
+}
